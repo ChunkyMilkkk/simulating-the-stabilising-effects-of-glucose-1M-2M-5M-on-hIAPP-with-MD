@@ -1,0 +1,22 @@
+Lmod has detected the following error: The following module(s) are unknown:
+"slurm"
+
+Please check the spelling or version number. Also try "module spider ..."
+It is also possible your cache file is out-of-date; it may help to try:
+  $ module --ignore_cache load "slurm"
+
+Also make sure that all modulefiles written in TCL start with the string
+#%Module
+
+
+
+The current job ID is 48714978
+Running on 1 nodes
+Using 120 tasks per node
+A total of 120 tasks is used
+Node list:
+JobID                                                                                                    NodeList 
+------------ ---------------------------------------------------------------------------------------------------- 
+48714978                                                                                                nid002560 
+48714978.ba+                                                                                            nid002560 
+48714978.ex+                                                                                            nid002560 

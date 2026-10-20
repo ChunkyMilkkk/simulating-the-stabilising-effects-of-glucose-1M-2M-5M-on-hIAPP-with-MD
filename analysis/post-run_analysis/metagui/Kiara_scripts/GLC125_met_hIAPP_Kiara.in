@@ -1,0 +1,14 @@
+#:w: METAGUI_EXE /home/toni/compile/metagui2/metagui_util.x
+KT 2.57
+
+GRO_FILE /mnt/d/Users/20064950/hIAPP/glucose/125/125_hIAPP_GLC_NPT.gro
+
+COLVAR_FILE /mnt/d/Users/20064950/hIAPP/glucose/125/ogCOLVAR.0  /mnt/d/Users/20064950/hIAPP/glucose/125/rIAPP_monomer_0.xtc 310 1 /mnt/d/Users/20064950/hIAPP/glucose/125/ogHILLS.0
+COLVAR_FILE /mnt/d/Users/20064950/hIAPP/glucose/125/ogCOLVAR.1  /mnt/d/Users/20064950/hIAPP/glucose/125/rIAPP_monomer_1.xtc 310 1 /mnt/d/Users/20064950/hIAPP/glucose/125/ogHILLS.1
+COLVAR_FILE /mnt/d/Users/20064950/hIAPP/glucose/125/ogCOLVAR.2  /mnt/d/Users/20064950/hIAPP/glucose/125/rIAPP_monomer_2.xtc 310 1 /mnt/d/Users/20064950/hIAPP/glucose/125/ogHILLS.2
+
+# input to be used on pawsey remote visualisation so file path to match this
+
+#CVGRID  1 0.154144 20.789309 516 alpha
+#CVGRID  2 0.000906 9.12662 229 beta
+ACTIVE 2  1 2

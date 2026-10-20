@@ -1,0 +1,12 @@
+# METAGUI_EXE ~/kbruckner/metagui3/run_metagui3.tcl
+KT 2.57
+
+GRO_FILE "first_runs/hIAPP_GLC_5M/04_npt_310_posres.gro"
+
+COLVAR_FILE "first_runs/hIAPP_GLC_5M/metagui/inputs/file_prep/ogCOLVAR.0" "first_runs/hIAPP_GLC_5M/GLC_5M_hIAPP0.xtc" 310 1 "first_runs/hIAPP_GLC_5M/metagui/inputs/file_prep/ogHILLS.0"
+COLVAR_FILE "first_runs/hIAPP_GLC_5M/metagui/inputs/file_prep/ogCOLVAR.1" "first_runs/hIAPP_GLC_5M/GLC_5M_hIAPP1.xtc" 310 1 "first_runs/hIAPP_GLC_5M/metagui/inputs/file_prep/ogHILLS.1"
+COLVAR_FILE "first_runs/hIAPP_GLC_5M/metagui/inputs/file_prep/ogCOLVAR.2" "first_runs/hIAPP_GLC_5M/GLC_5M_hIAPP2.xtc" 310 1 "first_runs/hIAPP_GLC_5M/metagui/inputs/file_prep/ogHILLS.2"
+
+# input to be used on pawsey remote visualisation so file path to match this
+
+ACTIVE 2  1 2

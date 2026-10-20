@@ -1,0 +1,128 @@
+
+  ##################################################################
+  ##                                                              ##
+  ##  WHAM-BASED CLUSTER ANALYSIS FOR BIAS-EXCHANGE METADYNAMICS  ##
+  ##                                                              ##
+  ##################################################################
+
+!!!!!!!!!!!!!!!!!!  I N P U T   T E M P L A T E  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+KT     2.4                     ! temperature          (units of HILLS files)        !
+T_FILL  40000. 40000.          ! fill and smooth time                               !
+FILE_HILL  HILLS.A  1  1       ! Hill_file, with one biased variable, the first one !
+FILE_HILL  HILLS.B  1  2       ! Hill_file, with one biased variable, the second one!
+DELTA  2.                      ! align VG within 2 KT.                              !
+NCV_ACTIVE  3                  ! number of active CVs                               !
+RANGE_CV  1  0.0  1.0          ! restrict active CV 1 to range 0.0:1.0              !
+RANGE_CV  2  0.5  2.0          ! restrict active CV 2 to range 0.5:2.0              !
+RANGE_CV  3  -3.14 3.14        ! restrict active CV 2 to range -3.14:3.14           !
+PERIODIC  3                    ! active CV 3 is periodic                            !
+MIN_OVERLAP  2                 ! retain cluster if at least 2 walkers have NEFF>=1  !
+NGRID        50                ! compute VG aligment on a grid of size 50           !
+GCORR        10.               ! correlation time of n                              !
+TR_N_EXP     10.               ! Threshold on the number of explored clusters       !
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+INPUT: KT 	 2.57                                                             
+INPUT: T_FILL  	 1 	 1275000                                                 
+INPUT: DELTA 	 4                                                             
+INPUT: GCORR 	 1                                                             
+INPUT: TR_N_EXP 	 5                                                          
+INPUT: FILE_HILL 	 ogHILLS.0 	 1 	 1                                         
+INPUT: FILE_HILL 	 ogHILLS.1 	 1 	 2                                         
+INPUT: FILE_HILL 	 ogHILLS.2 	 2 	 1 2                                       
+INPUT: NCV_ACTIVE 	 2                                                        
+INPUT: RANGE_CV 1 0.18416 21.024575                                          
+INPUT: RANGE_CV 2 0.00086 9.050865                                           
+INPUT: NGRID 	 50                                                            
+INPUT: MIN_OVERLAP 1                                                         
+INPUT: KT 	 2.57                                                             
+INPUT: T_FILL  	 1 	 1275000                                                 
+INPUT: DELTA 	 4                                                             
+INPUT: GCORR 	 1                                                             
+INPUT: TR_N_EXP 	 5                                                          
+INPUT: FILE_HILL 	 ogHILLS.0 	 1 	 1                                         
+INPUT: FILE_HILL 	 ogHILLS.1 	 1 	 2                                         
+INPUT: FILE_HILL 	 ogHILLS.2 	 2 	 1 2                                       
+INPUT: NCV_ACTIVE 	 2                                                        
+INPUT: RANGE_CV 1 0.18416 21.024575                                          
+INPUT: RANGE_CV 2 0.00086 9.050865                                           
+INPUT: NGRID 	 50                                                            
+INPUT: MIN_OVERLAP 1                                                         
+ ogHILLS.0:#! ACTIVE 1 1 A
+ nactive=           1  label=A                                                 
+ ogHILLS.1:#! ACTIVE 1 2 B
+ nactive=           1  label=B                                                 
+ ogHILLS.2:#! ACTIVE 2 1 2 C
+ nactive=           2  label=C                                                 
+  reading cluster labels from file LABELS
+  read      250029 cluster labels from file LABELS
+  assigned cluster labels =   250029
+
+ ::::::::::::::::: bias potentials VG :::::::::::::::::::::::
+
+  ogHILLS.0 :  nhills, CV frames, active CV =1666862   83343  1
+  computing two VG profiles on the grid
+  ..................................................  done
+  aligning two VG profiles by
+  maximizing # grid points connected to maximum in VG within DELTA*KT range
+  grid points visited = 100.00 %
+  ...................................................  done
+  CCbest =  -9.25
+  visited grid points within range = 100.00 %   connected = 100.00 %
+  average error on the connected grid points:  2.26
+  assigning VG to each frame
+  good_frames = 99.94 %
+
+  ogHILLS.1 :  nhills, CV frames, active CV =1666862   83343  2
+  computing two VG profiles on the grid
+  ..................................................  done
+  aligning two VG profiles by
+  maximizing # grid points connected to maximum in VG within DELTA*KT range
+  grid points visited = 100.00 %
+  ...................................................  done
+  CCbest =  -9.25
+  visited grid points within range = 100.00 %   connected = 100.00 %
+  average error on the connected grid points:  3.11
+  assigning VG to each frame
+  good_frames = 99.97 %
+
+  ogHILLS.2 :  nhills, CV frames, active CV =1666862   83343  1  2
+  computing two VG profiles on the grid
+  ..................................................  done
+  aligning two VG profiles by
+  maximizing # grid points connected to maximum in VG within DELTA*KT range
+  grid points visited =  62.48 %
+  ...................................................  done
+  CCbest =  -9.25
+  visited grid points within range =  86.56 %   connected =  86.56 %
+  average error on the connected grid points:  3.90
+  assigning VG to each frame
+  good_frames = 94.24 %
+
+ ::::::::::::::::: free energy of clusters from WHAM ::::::::
+
+  computing VEFF and NEFF
+          4872 frames discarded
+        245157 frames accepted
+  cleaning from dirty clusters
+        37 clusters discarded (not visited by enough walkers)
+       963 clusters accepted
+  rmsd (VEFF-VG_ave) =     7.080
+  rmsd (VG-VG_ave)   =     1.953
+    (if they are very different there is a problem)
+  calculating f constants (shift of VG)
+    iteration, f (units of HILLS file) :
+    1000   20.67   44.73   59.39
+    2000   20.67   44.73   59.39
+    3000   20.67   44.73   59.39
+    4000   20.67   44.73   59.39
+    5000   20.67   44.73   59.39
+    6000   20.67   44.73   59.39
+    7000   20.67   44.73   59.39
+    8000   20.67   44.73   59.39
+    9000   20.67   44.73   59.39
+   10000   20.67   44.73   59.39
+  assigning free energy to clusters
+  free-energy dispersion of clusters (units of HILLS files) = 1000.00
+  files FES and FES_ALLW written
+    (contains: cluster F err)
+    (contains: cluster S(1:NCV) F F_H(1:NH))

@@ -1,0 +1,198 @@
+GROMACS:    gmx hbond, VERSION 5.0.7
+
+GROMACS is written by:
+Emile Apol         Rossen Apostolov   Herman J.C. Berendsen Par Bjelkmar       
+Aldert van Buuren  Rudi van Drunen    Anton Feenstra     Sebastian Fritsch  
+Gerrit Groenhof    Christoph Junghans Peter Kasson       Carsten Kutzner    
+Per Larsson        Justin A. Lemkul   Magnus Lundborg    Pieter Meulenhoff  
+Erik Marklund      Teemu Murtola      Szilard Pall       Sander Pronk       
+Roland Schulz      Alexey Shvetsov    Michael Shirts     Alfons Sijbers     
+Peter Tieleman     Christian Wennberg Maarten Wolf       
+and the project leaders:
+Mark Abraham, Berk Hess, Erik Lindahl, and David van der Spoel
+
+Copyright (c) 1991-2000, University of Groningen, The Netherlands.
+Copyright (c) 2001-2014, The GROMACS development team at
+Uppsala University, Stockholm University and
+the Royal Institute of Technology, Sweden.
+check out http://www.gromacs.org for more information.
+
+GROMACS is free software; you can redistribute it and/or modify it
+under the terms of the GNU Lesser General Public License
+as published by the Free Software Foundation; either version 2.1
+of the License, or (at your option) any later version.
+
+GROMACS:      gmx hbond, VERSION 5.0.7
+Executable:   /software/projects/pawsey0110/setonix/software/cray-sles15-zen3/gcc-12.1.0/gromacs-5.0.7-feg54bfitn5swwhpzy3hftthte2z5bss/bin/gmx_mpi
+Library dir:  /software/projects/pawsey0110/setonix/software/cray-sles15-zen3/gcc-12.1.0/gromacs-5.0.7-feg54bfitn5swwhpzy3hftthte2z5bss/share/gromacs/top
+Command line:
+  gmx_mpi hbond -f GLC_1M_hIAPP0.xtc -s GLC_1M_hIAPP0.tpr -n index.ndx -a 37 -b 1275000 -num hIAPP_GLC1M_hb_pro_water_rep0.xvg
+
+Reading file GLC_1M_hIAPP0.tpr, VERSION 5.0.7 (single precision)
+Group     0 (         System) has 34932 elements
+Group     1 (        Protein) has   537 elements
+Group     2 (      Protein-H) has   273 elements
+Group     3 (        C-alpha) has    37 elements
+Group     4 (       Backbone) has   112 elements
+Group     5 (      MainChain) has   149 elements
+Group     6 (   MainChain+Cb) has   184 elements
+Group     7 (    MainChain+H) has   190 elements
+Group     8 (      SideChain) has   347 elements
+Group     9 (    SideChain-H) has   124 elements
+Group    10 (    Prot-Masses) has   537 elements
+Group    11 (    non-Protein) has 34395 elements
+Group    12 (          Other) has  3360 elements
+Group    13 (           AGLC) has  1200 elements
+Group    14 (           BGLC) has  2160 elements
+Group    15 (             CL) has     3 elements
+Group    16 (          Water) has 31032 elements
+Group    17 (            SOL) has 31032 elements
+Group    18 (      non-Water) has  3900 elements
+Group    19 (            Ion) has     3 elements
+Group    20 ( Water_and_ions) has 31035 elements
+Specify 2 groups to analyze:
+Selected 1: 'Protein'
+Selected 16: 'Water'
+Checking for overlap in atoms between Protein and Water
+Calculating hydrogen bonds between Protein (537 atoms) and Water (31032 atoms)
+Found 7819 donors and 7864 acceptors
+
+Will do grid-seach on 15x15x15 grid, rcut=0.35
+Frame loop parallelized with OpenMP using 1 threads.
+Select a group: Select a group: Reading frame       0 time    0.000   Reading frame       0 time 1275000.000   Reading frame       1 time 1275020.000   Reading frame       2 time 1275040.000   Reading frame       3 time 1275060.000   Reading frame       4 time 1275080.000   Reading frame       5 time 1275100.000   Reading frame       6 time 1275120.000   Reading frame       7 time 1275140.000   Reading frame       8 time 1275160.000   Reading frame       9 time 1275180.000   Reading frame      10 time 1275200.000   Reading frame      11 time 1275220.000   Reading frame      12 time 1275240.000   Reading frame      13 time 1275260.000   Reading frame      14 time 1275280.000   Reading frame      15 time 1275300.000   Reading frame      16 time 1275320.000   Reading frame      17 time 1275340.000   Reading frame      18 time 1275360.000   Reading frame      19 time 1275380.000   Reading frame      20 time 1275400.000   Reading frame      30 time 1275600.000   Reading frame      40 time 1275800.000   Reading frame      50 time 1276000.000   Reading frame      60 time 1276200.000   Reading frame      70 time 1276400.000   Reading frame      80 time 1276600.000   Reading frame      90 time 1276800.000   Reading frame     100 time 1277000.000   Reading frame     110 time 1277200.000   Reading frame     120 time 1277400.000   Reading frame     130 time 1277600.000   Reading frame     140 time 1277800.000   Reading frame     150 time 1278000.000   Reading frame     160 time 1278200.000   Reading frame     170 time 1278400.000   Reading frame     180 time 1278600.000   Reading frame     190 time 1278800.000   Reading frame     200 time 1279000.000   Reading frame     300 time 1281000.000   Reading frame     400 time 1283000.000   Reading frame     500 time 1285000.000   Reading frame     600 time 1287000.000   Reading frame     700 time 1289000.000   Reading frame     800 time 1291000.000   Reading frame     900 time 1293000.000   Reading frame    1000 time 1295000.000   Reading frame    1100 time 1297000.000   Reading frame    1200 time 1299000.000   Reading frame    1300 time 1301000.000   Reading frame    1400 time 1303000.000   Reading frame    1500 time 1305000.000   Reading frame    1600 time 1307000.000   Reading frame    1700 time 1309000.000   Reading frame    1800 time 1311000.000   Reading frame    1900 time 1313000.000   Reading frame    2000 time 1315000.000   Reading frame    3000 time 1335000.000   Reading frame    4000 time 1355000.000   Reading frame    5000 time 1375000.000   Reading frame    6000 time 1395000.000   Reading frame    7000 time 1415000.000   Reading frame    8000 time 1435000.000   Reading frame    9000 time 1455000.000   Reading frame   10000 time 1475000.000   Reading frame   11000 time 1495000.000   Reading frame   12000 time 1515000.000   Reading frame   13000 time 1535000.000   Reading frame   14000 time 1555000.000   Reading frame   15000 time 1575000.000   Reading frame   16000 time 1595000.000   Reading frame   17000 time 1615000.000   Reading frame   18000 time 1635000.000   Reading frame   19000 time 1655000.000   
+
+gcq#111: "Bring Out the Gimp" (Pulp Fiction)
+
+Average number of hbonds per timeframe 97.305 out of 3.07443e+07 possible
+GROMACS:    gmx hbond, VERSION 5.0.7
+
+GROMACS is written by:
+Emile Apol         Rossen Apostolov   Herman J.C. Berendsen Par Bjelkmar       
+Aldert van Buuren  Rudi van Drunen    Anton Feenstra     Sebastian Fritsch  
+Gerrit Groenhof    Christoph Junghans Peter Kasson       Carsten Kutzner    
+Per Larsson        Justin A. Lemkul   Magnus Lundborg    Pieter Meulenhoff  
+Erik Marklund      Teemu Murtola      Szilard Pall       Sander Pronk       
+Roland Schulz      Alexey Shvetsov    Michael Shirts     Alfons Sijbers     
+Peter Tieleman     Christian Wennberg Maarten Wolf       
+and the project leaders:
+Mark Abraham, Berk Hess, Erik Lindahl, and David van der Spoel
+
+Copyright (c) 1991-2000, University of Groningen, The Netherlands.
+Copyright (c) 2001-2014, The GROMACS development team at
+Uppsala University, Stockholm University and
+the Royal Institute of Technology, Sweden.
+check out http://www.gromacs.org for more information.
+
+GROMACS is free software; you can redistribute it and/or modify it
+under the terms of the GNU Lesser General Public License
+as published by the Free Software Foundation; either version 2.1
+of the License, or (at your option) any later version.
+
+GROMACS:      gmx hbond, VERSION 5.0.7
+Executable:   /software/projects/pawsey0110/setonix/software/cray-sles15-zen3/gcc-12.1.0/gromacs-5.0.7-feg54bfitn5swwhpzy3hftthte2z5bss/bin/gmx_mpi
+Library dir:  /software/projects/pawsey0110/setonix/software/cray-sles15-zen3/gcc-12.1.0/gromacs-5.0.7-feg54bfitn5swwhpzy3hftthte2z5bss/share/gromacs/top
+Command line:
+  gmx_mpi hbond -f GLC_1M_hIAPP1.xtc -s GLC_1M_hIAPP1.tpr -n index.ndx -a 37 -b 1275000 -num hIAPP_GLC1M_hb_pro_water_rep1.xvg
+
+Reading file GLC_1M_hIAPP1.tpr, VERSION 5.0.7 (single precision)
+Group     0 (         System) has 34932 elements
+Group     1 (        Protein) has   537 elements
+Group     2 (      Protein-H) has   273 elements
+Group     3 (        C-alpha) has    37 elements
+Group     4 (       Backbone) has   112 elements
+Group     5 (      MainChain) has   149 elements
+Group     6 (   MainChain+Cb) has   184 elements
+Group     7 (    MainChain+H) has   190 elements
+Group     8 (      SideChain) has   347 elements
+Group     9 (    SideChain-H) has   124 elements
+Group    10 (    Prot-Masses) has   537 elements
+Group    11 (    non-Protein) has 34395 elements
+Group    12 (          Other) has  3360 elements
+Group    13 (           AGLC) has  1200 elements
+Group    14 (           BGLC) has  2160 elements
+Group    15 (             CL) has     3 elements
+Group    16 (          Water) has 31032 elements
+Group    17 (            SOL) has 31032 elements
+Group    18 (      non-Water) has  3900 elements
+Group    19 (            Ion) has     3 elements
+Group    20 ( Water_and_ions) has 31035 elements
+Specify 2 groups to analyze:
+Selected 1: 'Protein'
+Selected 16: 'Water'
+Checking for overlap in atoms between Protein and Water
+Calculating hydrogen bonds between Protein (537 atoms) and Water (31032 atoms)
+Found 7819 donors and 7864 acceptors
+
+Will do grid-seach on 15x15x15 grid, rcut=0.35
+Frame loop parallelized with OpenMP using 1 threads.
+Select a group: Select a group: Reading frame       0 time    0.000   Reading frame       0 time 1275000.000   Reading frame       1 time 1275020.000   Reading frame       2 time 1275040.000   Reading frame       3 time 1275060.000   Reading frame       4 time 1275080.000   Reading frame       5 time 1275100.000   Reading frame       6 time 1275120.000   Reading frame       7 time 1275140.000   Reading frame       8 time 1275160.000   Reading frame       9 time 1275180.000   Reading frame      10 time 1275200.000   Reading frame      11 time 1275220.000   Reading frame      12 time 1275240.000   Reading frame      13 time 1275260.000   Reading frame      14 time 1275280.000   Reading frame      15 time 1275300.000   Reading frame      16 time 1275320.000   Reading frame      17 time 1275340.000   Reading frame      18 time 1275360.000   Reading frame      19 time 1275380.000   Reading frame      20 time 1275400.000   Reading frame      30 time 1275600.000   Reading frame      40 time 1275800.000   Reading frame      50 time 1276000.000   Reading frame      60 time 1276200.000   Reading frame      70 time 1276400.000   Reading frame      80 time 1276600.000   Reading frame      90 time 1276800.000   Reading frame     100 time 1277000.000   Reading frame     110 time 1277200.000   Reading frame     120 time 1277400.000   Reading frame     130 time 1277600.000   Reading frame     140 time 1277800.000   Reading frame     150 time 1278000.000   Reading frame     160 time 1278200.000   Reading frame     170 time 1278400.000   Reading frame     180 time 1278600.000   Reading frame     190 time 1278800.000   Reading frame     200 time 1279000.000   Reading frame     300 time 1281000.000   Reading frame     400 time 1283000.000   Reading frame     500 time 1285000.000   Reading frame     600 time 1287000.000   Reading frame     700 time 1289000.000   Reading frame     800 time 1291000.000   Reading frame     900 time 1293000.000   Reading frame    1000 time 1295000.000   Reading frame    1100 time 1297000.000   Reading frame    1200 time 1299000.000   Reading frame    1300 time 1301000.000   Reading frame    1400 time 1303000.000   Reading frame    1500 time 1305000.000   Reading frame    1600 time 1307000.000   Reading frame    1700 time 1309000.000   Reading frame    1800 time 1311000.000   Reading frame    1900 time 1313000.000   Reading frame    2000 time 1315000.000   Reading frame    3000 time 1335000.000   Reading frame    4000 time 1355000.000   Reading frame    5000 time 1375000.000   Reading frame    6000 time 1395000.000   Reading frame    7000 time 1415000.000   Reading frame    8000 time 1435000.000   Reading frame    9000 time 1455000.000   Reading frame   10000 time 1475000.000   Reading frame   11000 time 1495000.000   Reading frame   12000 time 1515000.000   Reading frame   13000 time 1535000.000   Reading frame   14000 time 1555000.000   Reading frame   15000 time 1575000.000   Reading frame   16000 time 1595000.000   Reading frame   17000 time 1615000.000   Reading frame   18000 time 1635000.000   Reading frame   19000 time 1655000.000   
+
+gcq#329: "Jede der Scherben spiegelt das Licht" (Wir sind Helden)
+
+Average number of hbonds per timeframe 95.740 out of 3.07443e+07 possible
+GROMACS:    gmx hbond, VERSION 5.0.7
+
+GROMACS is written by:
+Emile Apol         Rossen Apostolov   Herman J.C. Berendsen Par Bjelkmar       
+Aldert van Buuren  Rudi van Drunen    Anton Feenstra     Sebastian Fritsch  
+Gerrit Groenhof    Christoph Junghans Peter Kasson       Carsten Kutzner    
+Per Larsson        Justin A. Lemkul   Magnus Lundborg    Pieter Meulenhoff  
+Erik Marklund      Teemu Murtola      Szilard Pall       Sander Pronk       
+Roland Schulz      Alexey Shvetsov    Michael Shirts     Alfons Sijbers     
+Peter Tieleman     Christian Wennberg Maarten Wolf       
+and the project leaders:
+Mark Abraham, Berk Hess, Erik Lindahl, and David van der Spoel
+
+Copyright (c) 1991-2000, University of Groningen, The Netherlands.
+Copyright (c) 2001-2014, The GROMACS development team at
+Uppsala University, Stockholm University and
+the Royal Institute of Technology, Sweden.
+check out http://www.gromacs.org for more information.
+
+GROMACS is free software; you can redistribute it and/or modify it
+under the terms of the GNU Lesser General Public License
+as published by the Free Software Foundation; either version 2.1
+of the License, or (at your option) any later version.
+
+GROMACS:      gmx hbond, VERSION 5.0.7
+Executable:   /software/projects/pawsey0110/setonix/software/cray-sles15-zen3/gcc-12.1.0/gromacs-5.0.7-feg54bfitn5swwhpzy3hftthte2z5bss/bin/gmx_mpi
+Library dir:  /software/projects/pawsey0110/setonix/software/cray-sles15-zen3/gcc-12.1.0/gromacs-5.0.7-feg54bfitn5swwhpzy3hftthte2z5bss/share/gromacs/top
+Command line:
+  gmx_mpi hbond -f GLC_1M_hIAPP2.xtc -s GLC_1M_hIAPP2.tpr -n index.ndx -a 37 -b 1275000 -num hIAPP_GLC1M_hb_pro_water_rep2.xvg
+
+Reading file GLC_1M_hIAPP2.tpr, VERSION 5.0.7 (single precision)
+Group     0 (         System) has 34932 elements
+Group     1 (        Protein) has   537 elements
+Group     2 (      Protein-H) has   273 elements
+Group     3 (        C-alpha) has    37 elements
+Group     4 (       Backbone) has   112 elements
+Group     5 (      MainChain) has   149 elements
+Group     6 (   MainChain+Cb) has   184 elements
+Group     7 (    MainChain+H) has   190 elements
+Group     8 (      SideChain) has   347 elements
+Group     9 (    SideChain-H) has   124 elements
+Group    10 (    Prot-Masses) has   537 elements
+Group    11 (    non-Protein) has 34395 elements
+Group    12 (          Other) has  3360 elements
+Group    13 (           AGLC) has  1200 elements
+Group    14 (           BGLC) has  2160 elements
+Group    15 (             CL) has     3 elements
+Group    16 (          Water) has 31032 elements
+Group    17 (            SOL) has 31032 elements
+Group    18 (      non-Water) has  3900 elements
+Group    19 (            Ion) has     3 elements
+Group    20 ( Water_and_ions) has 31035 elements
+Specify 2 groups to analyze:
+Selected 1: 'Protein'
+Selected 16: 'Water'
+Checking for overlap in atoms between Protein and Water
+Calculating hydrogen bonds between Protein (537 atoms) and Water (31032 atoms)
+Found 7819 donors and 7864 acceptors
+
+Will do grid-seach on 15x15x15 grid, rcut=0.35
+Frame loop parallelized with OpenMP using 1 threads.
+Select a group: Select a group: Reading frame       0 time    0.000   Reading frame       0 time 1275000.000   Reading frame       1 time 1275020.000   Reading frame       2 time 1275040.000   Reading frame       3 time 1275060.000   Reading frame       4 time 1275080.000   Reading frame       5 time 1275100.000   Reading frame       6 time 1275120.000   Reading frame       7 time 1275140.000   Reading frame       8 time 1275160.000   Reading frame       9 time 1275180.000   Reading frame      10 time 1275200.000   Reading frame      11 time 1275220.000   Reading frame      12 time 1275240.000   Reading frame      13 time 1275260.000   Reading frame      14 time 1275280.000   Reading frame      15 time 1275300.000   Reading frame      16 time 1275320.000   Reading frame      17 time 1275340.000   Reading frame      18 time 1275360.000   Reading frame      19 time 1275380.000   Reading frame      20 time 1275400.000   Reading frame      30 time 1275600.000   Reading frame      40 time 1275800.000   Reading frame      50 time 1276000.000   Reading frame      60 time 1276200.000   Reading frame      70 time 1276400.000   Reading frame      80 time 1276600.000   Reading frame      90 time 1276800.000   Reading frame     100 time 1277000.000   Reading frame     110 time 1277200.000   Reading frame     120 time 1277400.000   Reading frame     130 time 1277600.000   Reading frame     140 time 1277800.000   Reading frame     150 time 1278000.000   Reading frame     160 time 1278200.000   Reading frame     170 time 1278400.000   Reading frame     180 time 1278600.000   Reading frame     190 time 1278800.000   Reading frame     200 time 1279000.000   Reading frame     300 time 1281000.000   Reading frame     400 time 1283000.000   Reading frame     500 time 1285000.000   Reading frame     600 time 1287000.000   Reading frame     700 time 1289000.000   Reading frame     800 time 1291000.000   Reading frame     900 time 1293000.000   Reading frame    1000 time 1295000.000   Reading frame    1100 time 1297000.000   Reading frame    1200 time 1299000.000   Reading frame    1300 time 1301000.000   Reading frame    1400 time 1303000.000   Reading frame    1500 time 1305000.000   Reading frame    1600 time 1307000.000   Reading frame    1700 time 1309000.000   Reading frame    1800 time 1311000.000   Reading frame    1900 time 1313000.000   Reading frame    2000 time 1315000.000   Reading frame    3000 time 1335000.000   Reading frame    4000 time 1355000.000   Reading frame    5000 time 1375000.000   Reading frame    6000 time 1395000.000   Reading frame    7000 time 1415000.000   Reading frame    8000 time 1435000.000   Reading frame    9000 time 1455000.000   Reading frame   10000 time 1475000.000   Reading frame   11000 time 1495000.000   Reading frame   12000 time 1515000.000   Reading frame   13000 time 1535000.000   Reading frame   14000 time 1555000.000   Reading frame   15000 time 1575000.000   Reading frame   16000 time 1595000.000   Reading frame   17000 time 1615000.000   Reading frame   18000 time 1635000.000   Reading frame   19000 time 1655000.000   
+
+gcq#175: "Ramones For Ever" (P.J. Van Maaren)
+
+Average number of hbonds per timeframe 95.339 out of 3.07443e+07 possible
